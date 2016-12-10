@@ -12,6 +12,40 @@ predict.m 是预测函数，传入 test 样本集和 θ，得到 m*1 预测结�
 最后打印出程序用时，Macbook Air (1.6GHz 双核 Intel Core i5)耗时约 80s<br/>
 <br/>
 PCA主要是为了提高程序收敛速度，保留不同方差信息量时，对程序的影响统计如下<br/>
+<style type="text/css">p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 19.0px; font: 13.0px 'Helvetica Neue'}
+span.Apple-tab-span {white-space:pre}</style>
+<p class="p1">
+	方差信息 &nbsp; <span style="white-space:pre">	</span>准确率 &nbsp; &nbsp;<span style="white-space:pre">		</span>投射维数<br />
+	
+</p>
+<p class="p1">
+	0.5<span>	</span><span>		</span>40.8%<span>	</span><span>	</span>3/784
+</p>
+<p class="p1">
+	0.75<span>	</span><span>		</span>63.4%<span>	</span><span>	</span>6/784
+</p>
+<p class="p1">
+	0.9<span>		</span><span>	</span>72.3%<span>	</span><span>	</span>12/784
+</p>
+<p class="p1">
+	0.95<span>	</span><span>		</span>85.3%<span>	</span><span>	</span>19/784
+</p>
+<p class="p1">
+	0.99<span>	</span><span>		</span>88.3%<span>	</span><span>	</span>42/784
+</p>
+<p class="p1">
+	0.995<span>		</span>88.8%<span>	</span><span>	</span>56/784<span>	</span>
+</p>
+<p class="p1">
+	0.999<span>		</span>89.195%<span>	</span><span>	</span>103/784<span>	</span>
+</p>
+<p class="p1">
+	0.9999<span>		</span>89.283%<span>		</span>231/784
+</p>
+<p class="p1">
+	1<span style="white-space:pre">			89.315% &nbsp; 	784/784</span>
+</p>
+<br />
 方差信息   准确率    投射维数<br/>
 0.5 			40.8%		  3/784<br/>
 0.75  		63.4%		  6/784<br/>
