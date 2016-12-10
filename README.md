@@ -3,7 +3,7 @@
 MINST 数据集地址：http://yann.lecun.com/exdb/mnist/
 项目采用了「矢量化编程」，循环相对较少
 
-ex.m 是项目的执行文件，ex_pca.m 添加了 PCA，收敛速度更快
+ex.m 是项目的执行文件，ex_pca.m 添加了 PCA，收敛速度更快\n
 loadData.m 是加载数据的函数，参数为 0 时加载 test 数据，否则加载 training 数据；将MINST 数据集下载下来后，只要更改此函数里的文件名变量，即可运行
 lrCostFunction.m 是代价函数，返回 J 和 J 对 θ 的导数
 fmin.m 是求取参数的函数，通过 BGD 迭代 50 次，得到使 J 最小的 θ
