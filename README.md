@@ -8,6 +8,7 @@ loadData.m 是加载数据的函数，参数为 0 时加载 test 数据，否则
 lrCostFunction.m 是代价函数，返回 J 和 J 对 θ 的导数<br/>
 fmin.m 是求取参数的函数，通过 BGD 迭代 50 次，得到使 J 最小的 θ<br/>
 predict.m 是预测函数，传入 test 样本集和 θ，得到 m*1 预测结果<br/>
+gradientCheck.m 是梯度检验函数，传入 ε 参数，返回「双边导数」、矢量化编程得到的导数和两者之比
 <br/>
 最后打印出程序用时，Macbook Air (1.6GHz 双核 Intel Core i5)耗时约 80s<br/>
 <br/>
