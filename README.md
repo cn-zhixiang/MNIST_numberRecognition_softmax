@@ -1,16 +1,14 @@
 # MNIST_numberRecognition_softmax<br/>
-基于 Softmax 回归对 MNIST 数据集的一个数字识别，IDE 为 Octave<br/>
-MINST 数据集地址：http://yann.lecun.com/exdb/mnist/<br/>
-项目采用了「矢量化编程」，循环相对较少<br/>
+　　基于 Softmax 回归对 MNIST 数据集的一个数字识别，IDE 为 Octave。项目采用了「矢量化编程」，循环相对较少。MINST 数据集地址：http://yann.lecun.com/exdb/mnist/<br/>
 <br/>
-ex.m 是项目的执行文件，ex_pca.m 与之相比添加了 PCA，收敛速度更快<br/>
-loadData.m 是加载数据的函数，参数为 0 时加载 test 数据，否则加载 training 数据；将 MINST 数据集下载下来后，只要更改此函数里的文件名变量，即可运行<br/>
-lrCostFunction.m 是代价函数，返回 J 和 J 对 θ 的导数<br/>
-fmin.m 是求取参数的函数，通过 BGD 迭代 50 次，得到使 J 最小的 θ<br/>
-predict.m 是预测函数，传入 test 样本集和 θ，得到 m*1 预测结果<br/>
-gradientCheck.m 是梯度检验函数，传入 ε 参数，返回「双边导数」、矢量化编程得到的导数和两者之比
+　　ex.m 是项目的执行文件，ex_pca.m 与之相比添加了 PCA，收敛速度更快<br/>
+　　loadData.m 是加载数据的函数，参数为 0 时加载 test 数据，否则加载 training 数据；将 MINST 数据集下载下来后，只要更改此函数里的文件名变量，即可运行<br/>
+　　lrCostFunction.m 是代价函数，返回 J 和 J 对 θ 的导数<br/>
+　　fmin.m 是求取参数的函数，通过 BGD 迭代 50 次，得到使 J 最小的 θ<br/>
+　　predict.m 是预测函数，传入 test 样本集和 θ，得到 m*1 预测结果<br/>
+　　gradientCheck.m 是梯度检验函数，传入 ε 参数，返回「双边导数」、矢量化编程得到的导数和两者之比
 <br/>
-最后打印出程序用时，Macbook Air (1.6GHz 双核 Intel Core i5)耗时约 80s<br/>
+最后打印出程序用时，Macbook Air (1.6GHz 双核 Intel Core i5)耗时约 80s。准确率89.31%<br/>
 <br/>
 PCA主要是为了提高程序收敛速度，保留不同方差信息量时，对程序的影响统计如下<br/>
 
