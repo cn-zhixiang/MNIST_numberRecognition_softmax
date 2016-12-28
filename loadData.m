@@ -27,12 +27,12 @@ function [data label] = loadData(flag)
 %flag 不等于0即加载训练数据，等于0即加载测试数据
 if flag~=0
   fprintf('Loading training data...\n');
-  data_handle = fopen('MINST/train-images-idx3-ubyte', 'r');
-  data_handle_l = fopen('MINST/train-labels-idx1-ubyte', 'r');
+  data_handle = fopen('MNIST/train-images-idx3-ubyte', 'r');
+  data_handle_l = fopen('MNIST/train-labels-idx1-ubyte', 'r');
 else
   fprintf('Loading test data...\n');
-  data_handle = fopen('MINST/t10k-images-idx3-ubyte','r');
-  data_handle_l = fopen('MINST/t10k-labels-idx1-ubyte','r');
+  data_handle = fopen('MNIST/t10k-images-idx3-ubyte','r');
+  data_handle_l = fopen('MNIST/t10k-labels-idx1-ubyte','r');
 end
 
 num_info = fread(data_handle, 16, 'uint8');
